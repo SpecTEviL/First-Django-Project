@@ -1,4 +1,68 @@
-{% load static %}
-<link rel="stylesheet" href="{% static '/css/main.css' %}" type="text/css">
-<h1>Hello world</h1>
-<img src="{% static 'images/background.webp' %}" alt="">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
+    <title>Vishal Patil</title>
+</head>
+<body>
+    <br>
+    <div class="container">
+        <div class="row">
+            <img src="{% static 'images/vishaltext.webp' %}" style="margin: auto;" alt="Name">
+        </div>
+        <div class="row h-100">
+            <div class="col-md-3">
+                <div class="card card-body h-100 border-info" id="profile-wrapper">
+                    <img id="profile-pic" src="{% static 'images/vishal.jpg' %}" alt="">
+                    <br>
+                    <!-- <h3>Hi! I'm Vishal</h3> -->
+                    <p>I love Coding, Developing and Designing</p>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="card card-body h-100">
+                    <h4>About Me</h4>
+                    <hr>
+                    <p>
+                        Hello there, I'm Vishal, a Engineering Student currently persuing Bachelor of Technology from VJTI, Mumbai. I am a growing candidate, learning from experiences. I give my 100% in whatever I do to accomplish the goals. I'm an Electrical Engineer in making and a Coder by Passion.
+                        <br>
+                        Through LinkedIn and social media groups, I spend most of my time learning, coding, connecting with people and playing chess.
+                        <br>
+                        I have a keen interest in everything related to Computer Science and UI/UX. While not working, I spends most of my time playing chess or cricket. I can also be found reading books in my free period.
+                    </p>
+
+                    <ul class="social-links">
+                        <li><img class="social" src="{% static 'images/github.png' %}" title="Vishal's Github Profile" alt="Github"></li>
+                        <li><img class="social" src="{% static 'images/linkedin.png' %}" title="Vishal's LinkedIn Profile" alt="Linkedin"></li>
+                        <li><img class="social" src="{% static 'images/twitter.png' %}" title="Vishal's Twitter Profile" alt="Twitter"></li>
+                        <li><img class="social" src="{% static 'images/youtube.png' %}" title="Vishal's Youtube Channel" alt="Youtube"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card card-body h-100"></div>
+            </div>
+            <div class="col-md-6">
+                <div class="card card-body h-100"></div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card card-body h-100"></div>
+            </div>
+            <div class="col-md-6">
+                <div class="card card-body h-100"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
